@@ -14,7 +14,7 @@ public class permutation {
             return;
         }
         // iterate from index to arraylength, if index is not marked add it to the list
-        // and mark it, once base case is reached unmark it for other recursions
+        // and mark it, once base case is reached, remove the last elementand unmark it for other recursions
         for (int index = 0; index < limit; index++) {
             if (!marked[index]) {
                 ds.add(arr[index]);
